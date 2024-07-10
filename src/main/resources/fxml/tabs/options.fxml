@@ -10,7 +10,7 @@
    <children>
       <VBox alignment="CENTER" prefHeight="718.0" prefWidth="1043.0" spacing="100.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#nouvelle_partie" text="Nouvelle Partie">
+            <Button mnemonicParsing="false" onMouseClicked="#nouvelle_partie" text="Nouvelle Partie">
                <font>
                   <Font size="20.0" />
                </font>
@@ -18,7 +18,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button mnemonicParsing="false" onAction="#quitter_jeu" text="Quitter">
+            <Button mnemonicParsing="false" onMouseClicked="#quitter_jeu" text="Quitter">
                <font>
                   <Font size="20.0" />
                </font>

@@ -1,5 +1,10 @@
 package fr.haronman.simlife;
 
+import fr.haronman.simlife.controller.DiaryController;
+import fr.haronman.simlife.controller.MainController;
+import fr.haronman.simlife.controller.OptionsController;
+import fr.haronman.simlife.model.Joueur;
+import fr.haronman.simlife.model.Partie;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,7 +15,17 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(Main.class.getClassLoader().getResource("fr/haronman/simlife/fxml/main.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getClassLoader().getResource("fxml/main.fxml"));
+        Parent root = loader.load();
+        MainController mainController = loader.getController();
+
+        Partie partie = new Partie(new Joueur("Doe", "Jane"));
+
+        mainController.getDiaryController().setPartie(partie);
+        mainController.getDiaryController().init();
+        
+        mainController.getOptionsController().setPartie(partie);
+
         primaryStage.setTitle("SimLife");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

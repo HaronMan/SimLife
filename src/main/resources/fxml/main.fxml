@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1043.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1043.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.haronman.simlife.controller.MainController">
    <tabs>
       <Tab closable="false" text="Journal intime">
          <content>
-            <fx:include source="tabs/diary.fxml" />
+            <fx:include fx:id="diary" source="tabs/diary.fxml" />
          </content>
       </Tab>
       <Tab closable="false" text="Actions">
@@ -31,7 +31,7 @@
       </Tab>
       <Tab closable="false" text="Options">
          <content>
-            <fx:include source="tabs/options.fxml" />
+            <fx:include fx:id="options" source="tabs/options.fxml" />
          </content>
       </Tab>
    </tabs>
