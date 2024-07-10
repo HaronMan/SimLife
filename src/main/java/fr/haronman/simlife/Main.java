@@ -10,10 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(Main.class.getClassLoader().getResource("fr/haronman/simlife/fxml/jeu.fxml"));
+        Parent root = FXMLLoader.load(Main.class.getClassLoader().getResource("fr/haronman/simlife/fxml/main.fxml"));
         primaryStage.setTitle("SimLife");
         primaryStage.setScene(new Scene(root));
-        //primaryStage.setResizable(false);
         primaryStage.show();
     }
     

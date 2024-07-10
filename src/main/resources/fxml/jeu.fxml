@@ -77,7 +77,7 @@
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <Button fx:id="exit" mnemonicParsing="false" text="Quitter" onAction="#quitterJeu">
+                        <Button fx:id="exit" mnemonicParsing="false" text="Quitter">
                            <font>
                               <Font size="20.0" />
                            </font>
