@@ -14,12 +14,4 @@ public class Partie {
     public void annee_suivante() {
         joueur.grandir();
     }
-
-    public Joueur getJoueur() {
-        return joueur;
-    }
-
-    public void setJoueur(Joueur joueur) {
-        this.joueur = joueur;
-    }
 }

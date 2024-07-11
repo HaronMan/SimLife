@@ -46,6 +46,9 @@ public class DiaryController {
         label_age.setText("Argent : 0 $");
     }
 
+    /**
+     * Permet de passer à l'année suivante
+     */
     @FXML
     private void annee_suivante() {
         partie.annee_suivante();
