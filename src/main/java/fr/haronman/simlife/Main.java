@@ -28,6 +28,8 @@ public class Main extends Application {
 
         primaryStage.setTitle("SimLife");
         primaryStage.setScene(new Scene(root));
+        //primaryStage.setOnCloseRequest(e -> e.consume());
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
     
