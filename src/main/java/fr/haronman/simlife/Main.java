@@ -1,8 +1,6 @@
 package fr.haronman.simlife;
 
-import fr.haronman.simlife.controller.DiaryController;
 import fr.haronman.simlife.controller.MainController;
-import fr.haronman.simlife.controller.OptionsController;
 import fr.haronman.simlife.model.Joueur;
 import fr.haronman.simlife.model.Partie;
 import javafx.application.Application;
